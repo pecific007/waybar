@@ -1,0 +1,37 @@
+// -*- mode: jsonc -*-
+{
+
+  "layer": "bottom", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
+  "height": 30, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 4, // Gaps between modules (4px)
+
+  // Load modules:
+  "include": ["~/.config/waybar/modules.jsonc"],
+
+
+  "modules-left": [
+    "niri/workspaces",
+    "network",
+    // "niri/language"
+    // "niri/mode",
+    // "niri/scratchpad"
+    // "custom/media",
+    "mpd"
+  ],
+  "modules-center": [
+    "clock",
+  ],
+  "modules-right": [
+    // "idle_inhibitor",
+    "pulseaudio",
+    "backlight",
+    "cpu",
+    "memory",
+    "battery",
+    "tray",
+    "custom/apps",
+    "custom/power"
+  ]
+}
