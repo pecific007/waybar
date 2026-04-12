@@ -55,9 +55,11 @@ button:hover {
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
     /* background-color: #a37800; */
-    background-color: #9afcb3;
-    background: radial-gradient(#9afcb3 25%, rgba(0,0,0,0));
+    /* background-color: #9afcb3; */
+    /* background: radial-gradient(#9afcb3 25%, rgba(0,0,0,0)); */
     color: #ffffff;
+    border: 2px solid #9afcb3;
+    border-radius: 10px;
 }
 
 #workspaces button {
@@ -212,7 +214,9 @@ label:focus {
     border-radius: 0;
 }
 #cpu:hover {
-  background: radial-gradient( #9afcb315%, rgba(0, 0, 0, 0));
+  /* background: radial-gradient( #9afcb315%, rgba(0, 0, 0, 0)); */
+  border: 2px solid #9afcb3;
+  border-radius: 10px;
   color: #ffffff;
 }
 
@@ -226,8 +230,10 @@ label:focus {
     border-radius: 0;
 }
 #memory:hover {
-  background: radial-gradient( #9afcb315%, rgba(0, 0, 0, 0));
+  /* background: radial-gradient( #9afcb315%, rgba(0, 0, 0, 0)); */
   color: #ffffff;
+  border: 2px solid #9afcb3;
+  border-radius: 10px;
 }
 
 #disk {
@@ -243,8 +249,10 @@ label:focus {
     border-radius: 0;
 }
 #backlight:hover {
-    background: radial-gradient( #9afcb315%, rgba(0, 0, 0, 0));
+    /* background: radial-gradient( #9afcb315%, rgba(0, 0, 0, 0)); */
     color: #ffffff;
+    border: 2px solid #9afcb3;
+    border-radius: 10px;
 }
 
 #network {
@@ -255,14 +263,19 @@ label:focus {
     border-radius: 0;
 }
 #network:hover {
-    background: radial-gradient( #9afcb3 15%, rgba(0, 0, 0, 0));
+    /* background: radial-gradient( #9afcb3 15%, rgba(0, 0, 0, 0)); */
     color: #ffffff;
+    border: 2px solid #9afcb3;
+    border-radius: 10px;
 }
 
 #network.disconnected {
     /* background-color: #f53c3c; */
     /* background: #64727D; */
-    background: radial-gradient( #64727d 15%, rgba(0, 0, 0, 0));
+    /* background: radial-gradient( #64727d 15%, rgba(0, 0, 0, 0)); */
+
+  border: 2px solid #ff3d3e;
+  border-radius: 10px;
 }
 
 #pulseaudio {
@@ -276,9 +289,12 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    background: radial-gradient( #90b1b1 25%, rgba(0, 0, 0, 0));
+    /* background-color: #90b1b1; */
+    /* background: radial-gradient( #90b1b1 25%, rgba(0, 0, 0, 0)); */
     /* color: #2a5c45; */
+
+  border: 2px solid #ff3d3e;
+  border-radius: 10px;
 }
 
 #wireplumber {
@@ -306,7 +322,12 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    /* background-color: #f0932b; */
+    background: radial-gradient( #282a36 15%, rgba(0, 0, 0, 0));
+}
+#temperature:hover {
+    border-radius: 10px;
+    border: 2px solid #9afcb3;
 }
 
 #temperature.critical {
