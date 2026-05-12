@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import os
+
+
+os.system("pkill waybar")
+os.system("waybar")
+
+with open("style.css") as old_module:
+    new_module = open("style.css")
+    if not old_module == new_module:
+        os.system("pkill waybar")
+        os.system("waybar")

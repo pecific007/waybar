@@ -4,6 +4,7 @@
     font-size: 13px;
 }
 
+
 window#waybar {
     /* background-color: rgba(43, 48, 59, 0); */
     /* border-bottom: 3px solid rgba(100, 114, 125, 0); */
@@ -58,12 +59,14 @@ button:hover {
     /* background-color: #9afcb3; */
     /* background: radial-gradient(#9afcb3 25%, rgba(0,0,0,0)); */
     color: #ffffff;
-    border: 2px solid #9afcb3;
-    border-radius: 10px;
+    border-bottom: 2px solid #9afcb3;
+    /* border-radius: 10px; */
 }
 
 #workspaces button {
-    padding: 0 7.5px;
+    /* padding: 0 7.5px; */
+    /* padding: 0 4px 0 0; */ /* THIS IS THE BASE IT GOT WEIRD FOR WHATEVER REASON */
+    padding: 0 12px 0 8px;
     border-radius: 50%;
     /* background-color: transparent; */
     /* color: #ffffff; */
@@ -115,7 +118,7 @@ button:hover {
 #mpd {
     padding: 0 10px;
     color: #ffffff;
-    border-radius: 5em;
+    /* border-radius: 5em; */
 }
 
 #window,
@@ -139,7 +142,7 @@ button:hover {
     background: radial-gradient( #9afcb3 15%, rgba(255, 255, 255, 0.0));
     padding: 0 5em;
     color: #000000;
-    border-radius: 5em;
+    /* border-radius: 5em; */
 
     font-weight: 900;
     font-size: 25px;
@@ -148,6 +151,7 @@ button:hover {
 #clock:hover {
     background: radial-gradient( #282a36 15%, rgba(0, 0, 0, 0));
     color: #9afcb3;
+    text-shadow: 0 0 5 #acfcb3;
 }
 
 #battery {
@@ -215,8 +219,8 @@ label:focus {
 }
 #cpu:hover {
   /* background: radial-gradient( #9afcb315%, rgba(0, 0, 0, 0)); */
-  border: 2px solid #9afcb3;
-  border-radius: 10px;
+  border-bottom: 2px solid #9afcb3;
+  /* border-radius: 10px; */
   color: #ffffff;
 }
 
@@ -232,8 +236,8 @@ label:focus {
 #memory:hover {
   /* background: radial-gradient( #9afcb315%, rgba(0, 0, 0, 0)); */
   color: #ffffff;
-  border: 2px solid #9afcb3;
-  border-radius: 10px;
+  border-bottom: 2px solid #9afcb3;
+  /* border-radius: 10px; */
 }
 
 #disk {
@@ -251,8 +255,8 @@ label:focus {
 #backlight:hover {
     /* background: radial-gradient( #9afcb315%, rgba(0, 0, 0, 0)); */
     color: #ffffff;
-    border: 2px solid #9afcb3;
-    border-radius: 10px;
+    border-bottom: 2px solid #9afcb3;
+    /* border-radius: 10px; */
 }
 
 #network {
@@ -265,8 +269,8 @@ label:focus {
 #network:hover {
     /* background: radial-gradient( #9afcb3 15%, rgba(0, 0, 0, 0)); */
     color: #ffffff;
-    border: 2px solid #9afcb3;
-    border-radius: 10px;
+    border-bottom: 2px solid #9afcb3;
+    /* border-radius: 10px; */
 }
 
 #network.disconnected {
@@ -275,7 +279,7 @@ label:focus {
     /* background: radial-gradient( #64727d 15%, rgba(0, 0, 0, 0)); */
 
   border: 2px solid #ff3d3e;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 #pulseaudio {
@@ -293,8 +297,8 @@ label:focus {
     /* background: radial-gradient( #90b1b1 25%, rgba(0, 0, 0, 0)); */
     /* color: #2a5c45; */
 
-  border: 2px solid #ff3d3e;
-  border-radius: 10px;
+  border-bottom: 2px solid #ff3d3e;
+  /* border-radius: 10px; */
 }
 
 #wireplumber {
@@ -326,8 +330,8 @@ label:focus {
     background: radial-gradient( #282a36 15%, rgba(0, 0, 0, 0));
 }
 #temperature:hover {
-    border-radius: 10px;
-    border: 2px solid #9afcb3;
+    /* border-radius: 10px; */
+    border-bottom: 2px solid #9afcb3;
 }
 
 #temperature.critical {
@@ -443,19 +447,22 @@ label:focus {
   background: radial-gradient(#ff3d3e 25%, rgba(0,0,0,0));
   color: #ffffff;
   /* background: radial-gradient(#282a36 25%, rgba(0,0,0,0)); */
-  font-size: 20px;
+  /* font-size: 20px; */
   /* padding: 0 7.7px; */
   /* padding: 0 .35em; */
-  padding: 0 7.5px;
+  /* padding: 0 7.5px; */
+    padding: 0 11px 0 9px;
   border: 2px solid #fff;
   /* border-radius: 10px; */
   border-radius: 50%;
 }
+
 #custom-power:hover {
   font-weight: bold;
   background-color: #ff3d3e;
   color: #ffffff;
 }
+
 #custom-apps {
     background: #282a36;
     border-radius: 10px;
