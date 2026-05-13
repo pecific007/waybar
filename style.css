@@ -279,7 +279,7 @@ label:focus {
     /* background: radial-gradient( #64727d 15%, rgba(0, 0, 0, 0)); */
 
   border: 2px solid #ff3d3e;
-  /* border-radius: 10px; */
+  border-radius: 10px;
 }
 
 #pulseaudio {
@@ -297,8 +297,8 @@ label:focus {
     /* background: radial-gradient( #90b1b1 25%, rgba(0, 0, 0, 0)); */
     /* color: #2a5c45; */
 
-  border-bottom: 2px solid #ff3d3e;
-  /* border-radius: 10px; */
+  border: 2px solid #ff3d3e;
+  border-radius: 10px;
 }
 
 #wireplumber {
