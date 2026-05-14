@@ -131,7 +131,7 @@ button:hover {
     padding-right: 18px;
     /* color: #9ab3fc; */
     color: #282a36;
-    border-radius: 1rem;
+    border-radius: 0;
     border: 2px solid rgba(0, 0, 0, 0.0);
     /* background: radial-gradient( #282a36 15%, rgba(0, 0, 0, 0)); */
     background:
@@ -146,6 +146,7 @@ button:hover {
 #wireplumber:hover,
 #custom-media:hover,
 #custom-apps:hover {
+    border-radius: 1rem;
     color: #9ab3fc;
     background:
                 linear-gradient(to left, rgba(0, 0, 0, 0.0) 1%, rgba(0, 0, 0, 1.3) 35%, rgba(0, 0, 0, 1.3) 75%, rgba(0, 0, 0, 0.0) 100%),
@@ -295,20 +296,37 @@ button:hover {
     animation-direction: alternate;
 }
 
+
 #custom-power {
-  background-color: #282a36;
-  background: radial-gradient(#ff3d3e 25%, rgba(0,0,0,0));
-  color: #ffffff;
-  padding: 0 11px 0 9px;
-  border: 2px solid #fff;
-  border-radius: 50%;
+    /* background-color: #282a36; */
+    transition: all 150ms ease-in;
+    background: radial-gradient(circle, #ff3d3e, rgba(0, 0, 0, 0)),
+                radial-gradient(circle, #ff3d3e, rgba(0, 0, 0, 0));
+    border-radius: 1rem;
+    padding: 0 21px 0 19px;
+    border: 2px solid #9ab3fc;
 }
 
 #custom-power:hover {
-  font-weight: bold;
-  background-color: #ff3d3e;
-  color: #ffffff;
+    text-shadow: 0px 0px 4px #F00000;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0), #ff3d3e),
+                radial-gradient(circle, rgba(0, 0, 0, 0), #ff3d3e);
 }
+
+/* #custom-power { */
+/*   background-color: #282a36; */
+/*   background: radial-gradient(#ff3d3e 25%, rgba(0,0,0,0)); */
+/*   color: #ffffff; */
+/*   padding: 0 11px 0 9px; */
+/*   border: 2px solid #fff; */
+/*   border-radius: 50%; */
+/* } */
+/**/
+/* #custom-power:hover { */
+/*   font-weight: bold; */
+/*   background-color: #ff3d3e; */
+/*   color: #ffffff; */
+/* } */
 
 #custom-apps {
     background: #282a36;

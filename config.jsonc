@@ -13,12 +13,12 @@
 
   "modules-left": [
     "niri/workspaces",
-    "network",
+    "network"
     // "niri/language"
     // "niri/mode",
     // "niri/scratchpad"
     // "custom/media",
-    "mpd"
+    // "mpd"
   ],
   "modules-center": [
     "clock",
